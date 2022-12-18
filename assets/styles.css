@@ -1,3 +1,68 @@
+:root {
+    --darkgrey: rgb(49, 50, 60);
+    --lightblue: rgb(138, 227, 227);
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    align-items: center; 
+    display: flex;
+    background-color: var(--darkgrey);
+}
+
+.header-name {
+    width: 50%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 250%;
+
+}
+
+h1 {
+    padding-left: 3vw;
+    background-color: var(--lightblue);
+    color: var(--darkgrey)
+}
+
+nav {
+    width: 50%;
+    text-align: right;
+    justify-content: end;
+    padding-right: 5vw;;
+}
+
+li {
+    display: inline;
+    padding:0 1vw 0 1vw;
+    color: var(--lightblue);
+ margin: 0 .25vw 0 .25vw; 
+}
+
+a {
+   text-decoration: none; 
+   color: var(--lightblue);
+   border-bottom: 3px solid var(--lightblue);
+   transition: 0.5s ease-in-out;
+   padding: 2.5% 2% .75% 2%;
+}
+
+a:hover {
+    background-color: var(--lightblue);
+    color: var(--darkgrey);
+    padding: 2.5% 2% 2.5% 2%;
+    
+
+}
+
+#bckgrd-img {
+  height: 30vh;
+  width: 100%;
+  background-image: url(./ocean.jpg);
+  background-size: cover;
+}
+
 img {
     height: 200px;
     width: 200px;

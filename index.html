@@ -10,27 +10,29 @@
 </head>
 <body>
     <header>
-        <h1>Dominique</h1>
+        <div class="header-name">
+          <h1>Dominique</h1>   
+        </div>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+                <li><a>Resume</a></li>
             </ul>
         </nav>
     </header>
-    <div id="bckgrd-img"></div>
+    <div id="bckgrd-img" src="./assets/ocean.jpg" alt="birdseye view of the ocean"></div>
     <main>
         <section class="aboutme">
-            <h2>About Me</h2>
+            <h2 id="aboutme">About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
         <section class="work">
-            <h2>Work</h2>
+            <h2 id="work">Work</h2>
             <figure>
                 <figcaption>Surf Report</figcaption>
                 <img src="assets/Surf.jpg" alt=" upright surfboards"/>
@@ -52,8 +54,8 @@
                 <img src="assets/Run.jpg" alt="racetrack"/>
             </figure>
         </section>
-        <section>
-            <h2>Work</h2>
+        <section class="contact">
+            <h2 id="contactme">Contact Me</h2>
             <p>555-555-5555</p>
             <p>email@email.com</p>
             <p>GitHub</p>
