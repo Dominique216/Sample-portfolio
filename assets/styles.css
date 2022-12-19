@@ -37,7 +37,7 @@ li {
     display: inline;
     padding:0 1vw 0 1vw;
     color: var(--lightblue);
- margin: 0 .25vw 0 .25vw; 
+    margin: 0 .25vw 0 .25vw; 
 }
 
 a {
@@ -52,7 +52,6 @@ a:hover {
     background-color: var(--lightblue);
     color: var(--darkgrey);
     padding: 2.5% 2% 2.5% 2%;
-    
 
 }
 
@@ -63,7 +62,86 @@ a:hover {
   background-size: cover;
 }
 
+main {
+    display: inline;
+}
+
+.aboutme {
+  display: inline;
+}
+
+h2 {
+    float:left;
+    width: 30%;
+}
+
+.right {
+    float: right;
+    width: 70%;
+}
+
+.container {
+    margin-top: 3%;
+    margin-right: 10vw;
+    height: 20vh;
+    width: 60vw;
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 7vw);
+    row-gap: 3%;
+    column-gap: 1%;
+}
+
 img {
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
+}
+
+.surf {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    object-fit: cover;
+}
+
+.LED {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    object-fit: cover;
+}
+
+.calc {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    object-fit: cover;
+}
+
+.puzzle {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    object-fit: cover;
+}
+
+.run {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    object-fit: cover;
+}
+
+div {
+    display:none;
+}
+
+img:hover {
+  background-color: var(--lightblue);
+  opacity: 30%;
 }
