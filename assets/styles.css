@@ -1,6 +1,7 @@
 :root {
     --darkgrey: rgb(49, 50, 60);
     --lightblue: rgb(138, 227, 227);
+    --darkblue: rgb(22, 94, 124);
 }
 
 header {
@@ -33,7 +34,7 @@ nav {
     padding-right: 5vw;;
 }
 
-li {
+ #navli {
     display: inline;
     padding:0 1vw 0 1vw;
     color: var(--lightblue);
@@ -63,28 +64,56 @@ a:hover {
 }
 
 main {
-    display: inline;
-}
-
-.aboutme {
-  display: inline;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
 }
 
 h2 {
-    float:left;
-    width: 30%;
+    text-align: right;
+    width: 10%;
+    color: var(--darkblue);
+    font-size: 200%;
+    border-right: 0.5vw solid var(--darkblue);
+    float: left;
+    margin: 2% 0% 0% 10%;
+    padding-right: 0.5%;
+    padding-bottom: 3%;
 }
 
-.right {
+p, .container, .contactul {
+    width: 60vw;
     float: right;
-    width: 70%;
+    margin: 2% 12% 0% 0%;
 }
+
+.work {
+    height: 100vh;
+}
+
+.contactul {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+#contactli {
+    margin-bottom: 0%;;
+    padding: 0% 1% 0% 1%;
+    text-align: center;
+    font-size: 110%;
+    color: var(--darkblue);
+    padding-top: 4%;
+    border-bottom: .25vw var(--darkblue) solid;
+ 
+} 
+
+
 
 .container {
-    margin-top: 3%;
-    margin-right: 10vw;
     height: 20vh;
-    width: 60vw;
     display:grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 7vw);
@@ -137,9 +166,6 @@ img {
     object-fit: cover;
 }
 
-div {
-    display:none;
-}
 
 img:hover {
   background-color: var(--lightblue);
