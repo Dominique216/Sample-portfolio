@@ -4,6 +4,9 @@
     --darkblue: rgb(22, 94, 124);
 }
 
+/* navbar elenets */
+
+/* name on nav */
 header {
     height: 10vh;
     width: 100%;
@@ -27,21 +30,21 @@ h1 {
     color: var(--darkgrey)
 }
 
+/* nav list elements */
 nav {
     width: 50%;
     text-align: right;
-    justify-content: end;
-    padding-right: 5vw;;
+    padding-right: 5vw;
 }
 
- #navli {
+ .navli {
     display: inline;
     padding:0 1vw 0 1vw;
     color: var(--lightblue);
     margin: 0 .25vw 0 .25vw; 
 }
 
-a {
+.nava {
    text-decoration: none; 
    color: var(--lightblue);
    border-bottom: 3px solid var(--lightblue);
@@ -49,12 +52,13 @@ a {
    padding: 2.5% 2% .75% 2%;
 }
 
-a:hover {
+.nava:hover {
     background-color: var(--lightblue);
     color: var(--darkgrey);
     padding: 2.5% 2% 2.5% 2%;
 
 }
+
 
 #bckgrd-img {
   height: 30vh;
@@ -63,6 +67,8 @@ a:hover {
   background-size: cover;
 }
 
+
+
 main {
     display:flex;
     flex-direction: column;
@@ -70,11 +76,13 @@ main {
     padding-bottom: 5%;
 }
 
+/* h2 left side elements */
+
 h2 {
     text-align: right;
-    width: 10%;
+    width: 15%;
     color: var(--darkblue);
-    font-size: 200%;
+    font-size: 2rem;
     border-right: 0.5vw solid var(--darkblue);
     float: left;
     margin: 2% 0% 0% 10%;
@@ -99,7 +107,7 @@ p, .container, .contactul {
     justify-items: center;
 }
 
-#contactli {
+.contactli {
     margin-bottom: 0%;;
     padding: 0% 1% 0% 1%;
     text-align: center;
@@ -111,6 +119,7 @@ p, .container, .contactul {
 } 
 
 
+/* image gallery */
 
 .container {
     height: 20vh;
@@ -119,11 +128,27 @@ p, .container, .contactul {
     grid-template-rows: repeat(8, 7vw);
     row-gap: 3%;
     column-gap: 1%;
+   
 }
 
 img {
     height: 100%;
-    width: 100%;
+    width: 100%; 
+    border: 0.25vw solid rgb(40, 251, 255);
+}
+
+figcaption {
+    background-color: var(--lightblue);
+    width:fit-content;
+    padding: 1.5%;
+    position:absolute;
+    line-height: 1rem;
+    margin-top: 6%;
+    border: 0.25vw solid rgb(40, 251, 255);
+}
+
+#surfcap {
+    margin-top: 10%;
 }
 
 .surf {
@@ -167,7 +192,90 @@ img {
 }
 
 
+/* image hover */
+
 img:hover {
   background-color: var(--lightblue);
   opacity: 30%;
+}
+
+
+
+.contacta {
+    list-style: none;
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+ 
+   h2 { 
+    color: maroon;
+    font-size: 150%;
+   }
+   
+   nav {
+    width: 50%;
+    text-align: right;
+    padding-right: 5vw; 
+   }
+
+   .work {
+      height: 75vh;
+  }
+
+  nav {
+    width: 75%;
+    font-size: 100%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+     
+    h2 {
+        color: green;
+        font-size: 100%;
+    }
+    
+    .contactli {
+        font-size: 75%;
+        padding-top: 2%;
+    }
+
+    .work {
+        height: 60vh;
+    }
+ 
+    nav {
+        width: 75%;
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+   
+   h2 {
+    color: purple;
+   }
+
+   .contactli {
+    padding-top: 4%;
+   }
+    
+     .work {
+      height: 50vh;
+  }
+
+  h1 {
+    font-size: 75%;
+  }
+
+  nav {
+    width: 75%;
+    font-size: 50%;
+}
+
 }
