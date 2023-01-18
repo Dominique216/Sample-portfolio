@@ -74,6 +74,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 5%;
+    line-height: 1.5rem;
 }
 
 /* h2 left side elements */
@@ -147,11 +148,11 @@ figcaption {
     border: 0.25vw solid rgb(40, 251, 255);
 }
 
-#surfcap {
+#WhichWordcap {
     margin-top: 10%;
 }
 
-.surf {
+.Word {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 1;
